@@ -1,0 +1,76 @@
+Command: ninja all
+[1/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.obj
+[2/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.obj
+[3/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.obj
+[4/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.obj
+[5/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.obj
+[6/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.obj
+[7/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.obj
+[8/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.obj
+[9/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.obj
+[10/178] Building C object esp-idf/robot_hal/CMakeFiles/__idf_robot_hal.dir/src/hal_encoder.c.obj
+[11/178] Building C object esp-idf/robot_hal/CMakeFiles/__idf_robot_hal.dir/src/hal_motor.c.obj
+[12/178] Building C object esp-idf/services/CMakeFiles/__idf_services.dir/src/odometry.c.obj
+[13/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.obj
+[14/178] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.obj
+[15/178] Building C object esp-idf/services/CMakeFiles/__idf_services.dir/src/safety.c.obj
+[16/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/constants.pb-c.c.obj
+[17/178] Building C object esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.obj
+[18/178] Building C object esp-idf/robot_hal/CMakeFiles/__idf_robot_hal.dir/src/hal_uart_link.c.obj
+[19/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec0.pb-c.c.obj
+[20/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec2.pb-c.c.obj
+[21/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec1.pb-c.c.obj
+[22/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/session.pb-c.c.obj
+[23/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common/protocomm.c.obj
+[24/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_console.c.obj
+[25/178] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[26/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_httpd.c.obj
+[27/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security0.c.obj
+[28/178] Linking C static library esp-idf\console\libconsole.a
+[29/178] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj
+[30/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp_mpi.c.obj
+[31/178] Building C object esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/src/https_server.c.obj
+[32/178] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj
+[33/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security1.c.obj
+[34/178] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj
+[35/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj
+[36/178] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj
+[37/178] Linking C static library esp-idf\services\libservices.a
+[38/178] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security2.c.obj
+[39/178] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON_Utils.c.obj
+[40/178] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.obj
+[41/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/app_tasks.c.obj
+FAILED: esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/app_tasks.c.obj 
+D:\Users\ThanhKhoi\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/config" -I"D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_app/include" -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/newlib/platform_include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/config/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/config/include/freertos -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/config/xtensa/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/FreeRTOS-Kernel/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/freertos/esp_additions/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/include/soc -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/include/soc/esp32s3 -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/dma/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/ldo/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/debug_probe/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/power_supply/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/port/esp32s3/. -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/port/esp32s3/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/heap/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/heap/tlsf -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/log/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/soc/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/soc/esp32s3 -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/soc/esp32s3/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/soc/esp32s3/register -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/hal/platform_port/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/hal/esp32s3/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/hal/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_rom/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_rom/esp32s3 -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_common/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_system/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_system/port/soc -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_system/port/include/private -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/xtensa/esp32s3/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/xtensa/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/xtensa/deprecated_include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/include/apps -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/include/apps/sntp -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/lwip/src/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/port/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/port/freertos/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/port/esp32xx/include -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/port/esp32xx/include/arch -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/lwip/port/esp32xx/include/sys -I"D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_hal/include" -I"D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/bsp/include" -I"D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/control/include" -I"D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/services/include" -ID:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_timer/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap "-fmacro-prefix-map=D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot=." -fmacro-prefix-map=D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/app_tasks.c.obj -MF esp-idf\robot_app\CMakeFiles\__idf_robot_app.dir\src\app_tasks.c.obj.d -o esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/app_tasks.c.obj -c "D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_app/src/app_tasks.c"
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_app/src/app_tasks.c:37:27: error: 'PID_CFG' defined but not used [-Werror=unused-const-variable=]
+   37 | static const pid_config_t PID_CFG = {
+      |                           ^~~~~~~
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_app/src/app_tasks.c:33:23: warning: 's_pid_r' defined but not used [-Wunused-variable]
+   33 | static pid_t s_pid_l, s_pid_r;
+      |                       ^~~~~~~
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_app/src/app_tasks.c:33:14: warning: 's_pid_l' defined but not used [-Wunused-variable]
+   33 | static pid_t s_pid_l, s_pid_r;
+      |              ^~~~~~~
+cc1.exe: some warnings being treated as errors
+[42/178] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj
+[43/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_imu.c.obj
+[44/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_speed_ctrl.c.obj
+[45/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_comm.c.obj
+[46/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_telemetry.c.obj
+[47/178] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON.c.obj
+[48/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_imu_test.c.obj
+[49/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_motor_bringup.c.obj
+[50/178] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_speed_test.c.obj
+[51/178] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj
+[52/178] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj
+[53/178] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj
+[54/178] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj
+[55/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/report/BNO08xRptAcceleration.cpp.obj
+[56/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/report/BNO08xRptARVRStabilizedGameRV.cpp.obj
+[57/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/report/BNO08xRptShakeDetector.cpp.obj
+[58/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/report/BNO08xRptUncalGyro.cpp.obj
+[59/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/report/BNO08xRptRawMEMSGyro.cpp.obj
+[60/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/report/BNO08xRptRawMEMSMagnetometer.cpp.obj
+[61/178] Building CXX object esp-idf/robot_hal/CMakeFiles/__idf_robot_hal.dir/src/hal_imu.cpp.obj
+[62/178] Building CXX object esp-idf/esp32_BNO08x/CMakeFiles/__idf_esp32_BNO08x.dir/source/BNO08x.cpp.obj
+ninja: build stopped: subcommand failed.

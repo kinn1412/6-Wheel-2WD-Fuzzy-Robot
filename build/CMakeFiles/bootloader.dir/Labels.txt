@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/CMakeFiles/bootloader
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/CMakeFiles/bootloader.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/CMakeFiles/bootloader-complete.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

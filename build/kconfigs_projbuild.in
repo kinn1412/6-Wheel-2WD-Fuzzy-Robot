@@ -1,0 +1,7 @@
+source "D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/bootloader/Kconfig.projbuild"
+source "D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/partition_table/Kconfig.projbuild"
+source "D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/esp32_BNO08x/Kconfig.projbuild"
+source "D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/components/robot_hal/Kconfig.projbuild"

@@ -1,0 +1,767 @@
+Command: D:\Users\ThanhKhoi\.espressif\tools\python_env\v5.5\venv\Scripts\python.exe D:\Users\ThanhKhoi\.espressif\v5.5\esp-idf\tools/idf_monitor.py -p COM18 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Personal\UIT Learning\ROBOTICS\PROBOT\source\probot\build\probot.elf D:\Personal\UIT Learning\ROBOTICS\PROBOT\source\probot\build\bootloader\bootloader.elf --force-color -m 'D:\Users\ThanhKhoi\.espressif\tools\python_env\v5.5\venv\Scripts\python.exe' 'D:\Users\ThanhKhoi\.espressif\v5.5\esp-idf\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x159c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f48
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jun  3 2026 21:39:56[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0f958h ( 63832) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001f980 vaddr=3fc96c00 size=00698h (  1688) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27c24h (162852) map[0m
+[0;32mI (130) esp_image: segment 3: paddr=00047c4c vaddr=3fc97298 size=02544h (  9540) load[0m
+[0;32mI (132) esp_image: segment 4: paddr=0004a198 vaddr=40374000 size=12b04h ( 76548) load[0m
+[0;32mI (150) esp_image: segment 5: paddr=0005cca4 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (177) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     probot[0m
+[0;32mI (181) app_init: App version:      1[0m
+[0;32mI (184) app_init: Compile time:     Jun  3 2026 23:41:49[0m
+[0;32mI (189) app_init: ELF file SHA256:  4d3c5c69d...[0m
+[0;32mI (194) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (197) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (201) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (205) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (209) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (215) heap_init: At 3FC9AE00 len 0004E910 (314 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (226) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (237) spi_flash: detected chip: boya[0m
+[0;32mI (240) spi_flash: flash io: dio[0m
+[0;33mW (243) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (255) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (261) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (268) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (287) MAIN: MAIN...[0m
+[0;32mI (289) hal_motor: init MCPWM 20000 Hz (500 ticks/period) deadzone=0.00[0m
+[0;32mI (290) hal_encoder: init x4 CPR=1320 glitch=1000ns sign[L,R]=-1,1[0m
+[0;32mI (1336) BNO08x: Product ID 0 Info:                           [0m
+                ---------------------------
+                Product ID: 0x98a6b4
+                SW Version Major: 0x3
+                SW Version Minor: 0x2
+                SW Build Number:  0x6
+                SW Version Patch: 0xd
+                ---------------------------
+
+[0;32mI (1357) BNO08x: Product ID 1 Info:                           [0m
+                ---------------------------
+                Product ID: 0x98a6b4
+                SW Version Major: 0x3
+                SW Version Minor: 0x2
+                SW Build Number:  0x6
+                SW Version Patch: 0xd
+                ---------------------------
+
+[0;32mI (1388) BNO08x: Product ID 2 Info:                           [0m
+                ---------------------------
+                Product ID: 0x98a6b4
+                SW Version Major: 0x3
+                SW Version Minor: 0x2
+                SW Build Number:  0x6
+                SW Version Patch: 0xd
+                ---------------------------
+
+[0;32mI (1419) BNO08x: Product ID 3 Info:                           [0m
+                ---------------------------
+                Product ID: 0x98a6b4
+                SW Version Major: 0x3
+                SW Version Minor: 0x2
+                SW Build Number:  0x6
+                SW Version Patch: 0xd
+                ---------------------------
+
+[0;32mI (1450) BNO08x: Successfully initialized....[0m
+[0;32mI (2380) hal_imu: BNO08x ready: GameRV + CalGyro @ 100 Hz[0m
+[0;32mI (2381) hal_uart: UART2 up: 921600 baud TX=17 RX=16[0m
+[0;32mI (2381) app: tasks started (ctrl=pid)[0m
+[0;32mI (2382) main_task: Returned from app_main()[0m
+[0;32mI (3381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (4381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (5381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (6381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (7381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (8381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (9381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (10381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (11381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (12381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (13381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (14381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (15381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (16381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (17381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (18381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (19381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (20381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (21381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (22381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (23381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (24381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (25381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (26381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (27381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (28381) telem: wl=0.00 wr=0.00 yaw=-0.00 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (29381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=-0.01 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (30381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (31381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (32381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (33381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (34381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (35381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (36381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (37381) telem: wl=0.00 wr=0.00 yaw=0.00 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (38381) telem: wl=0.00 wr=0.00 yaw=0.13 yr=0.21 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (39381) telem: wl=0.00 wr=0.00 yaw=0.19 yr=-0.49 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (40381) telem: wl=0.00 wr=0.00 yaw=-0.15 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (41381) telem: wl=0.00 wr=0.00 yaw=-0.15 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (42381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=-0.01 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (43381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.04 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (44381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (45381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (46381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (47381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (48381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (49381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (50381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (51381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (52381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (53381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (54381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (55381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (56381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (57381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (58381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (59381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (60381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (61381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (62381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (63381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (64381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (65381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (66381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (67381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (68381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (69381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (70381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (71381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (72381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (73381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (74381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (75381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (76381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (77381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (78381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (79381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (80381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (81381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (82381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (83381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (84381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (85381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (86381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (87381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (88381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (89381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (90381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (91381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (92381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (93381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (94381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (95381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (96381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (97381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (98381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (99381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (100381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (101381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (102381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (103381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (104381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (105381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (106381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (107381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (108381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (109381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (110381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (111381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (112381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (113381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (114381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (115381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (116381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (117381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (118381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (119381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (120381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (121381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (122381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (123381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (124381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (125381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (126381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (127381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (128381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (129381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (130381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (131381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (132381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (133381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (134381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (135381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (136381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (137381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (138381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (139381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (140381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (141381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (142381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (143381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (144381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (145381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (146381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (147381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (148381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (149381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (150381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (151381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (152381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (153381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (154381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (155381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (156381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (157381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x00[0m
+[0;32mI (158381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (159381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (160381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (161381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (162381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (163381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (164381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (165381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (166381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (167381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (168381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (169381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (170381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (171381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (172381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (173381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (174381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (175381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (176381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (177381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (178381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (179381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (180381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (181381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (182381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (183381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (184381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (185381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (186381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (187381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (188381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (189381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (190381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (191381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (192381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (193381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (194381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (195381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (196381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (197381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (198381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (199381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (200381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (201381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (202381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (203381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (204381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (205381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (206381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (207381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (208381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (209381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (210381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (211381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (212381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (213381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (214381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (215381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (216381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (217381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (218381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (219381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (220381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (221381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (222381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (223381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (224381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (225381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (226381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (227381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (228381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (229381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (230381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (231381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (232381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (233381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (234381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (235381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (236381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (237381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (238381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (239381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (240381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (241381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (242381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (243381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (244381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (245381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (246381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (247381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (248381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (249381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (250381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (251381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (252381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (253381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (254381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (255381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (256381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (257381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (258381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (259381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (260381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (261381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (262381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (263381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (264381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (265381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (266381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (267381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (268381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (269381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (270381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (271381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (272381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (273381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (274381) telem: wl=0.00 wr=0.00 yaw=-0.08 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (275381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (276381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (277381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (278381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (279381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (280381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (281381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (282381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (283381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (284381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (285381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (286381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (287381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (288381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (289381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (290381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (291381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (292381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (293381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (294381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (295381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (296381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (297381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (298381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (299381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (300381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (301381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (302381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (303381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (304381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (305381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (306381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (307381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (308381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (309381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (310381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (311381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (312381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (313381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (314381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (315381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (316381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (317381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (318381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (319381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (320381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (321381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (322381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (323381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (324381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (325381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (326381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (327381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (328381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (329381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (330381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (331381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (332381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (333381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (334381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (335381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (336381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (337381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (338381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (339381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (340381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (341381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (342381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (343381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (344381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (345381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (346381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (347381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (348381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (349381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (350381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (351381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (352381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (353381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (354381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (355381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (356381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (357381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (358381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (359381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (360381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (361381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (362381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (363381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (364381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (365381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (366381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (367381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (368381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (369381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (370381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (371381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (372381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (373381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (374381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (375381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (376381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (377381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (378381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (379381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (380381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (381381) telem: wl=0.00 wr=0.00 yaw=-0.06 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (382381) telem: wl=0.00 wr=0.00 yaw=0.12 yr=0.47 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (383381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (384381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (385381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (386381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (387381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (388381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (389381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (390381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (391381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (392381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (393381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (394381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (395381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (396381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (397381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (398381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (399381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (400381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (401381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (402381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (403381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (404381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (405381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (406381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (407381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (408381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (409381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (410381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (411381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (412381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (413381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (414381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (415381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (416381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (417381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (418381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (419381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (420381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (421381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (422381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (423381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (424381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (425381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (426381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (427381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (428381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (429381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (430381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (431381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (432381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (433381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (434381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (435381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (436381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (437381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (438381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (439381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (440381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (441381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (442381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (443381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (444381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (445381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (446381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (447381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (448381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (449381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (450381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (451381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (452381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (453381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (454381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (455381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (456381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (457381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (458381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (459381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (460381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (461381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (462381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (463381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (464381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (465381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (466381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (467381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (468381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (469381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (470381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (471381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (472381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (473381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (474381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (475381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (476381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (477381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (478381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (479381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (480381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (481381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (482381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (483381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (484381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (485381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (486381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (487381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (488381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (489381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (490381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (491381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (492381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (493381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (494381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (495381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (496381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (497381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (498381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (499381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (500381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (501381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (502381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (503381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (504381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (505381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (506381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (507381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (508381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (509381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (510381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (511381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (512381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (513381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (514381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (515381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (516381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (517381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (518381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (519381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (520381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (521381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (522381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (523381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (524381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (525381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (526381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (527381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (528381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (529381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (530381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (531381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (532381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (533381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (534381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (535381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (536381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (537381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (538381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (539381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (540381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (541381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (542381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (543381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (544381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (545381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (546381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (547381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (548381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (549381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (550381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (551381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (552381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (553381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (554381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (555381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (556381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (557381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (558381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (559381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (560381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (561381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (562381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (563381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (564381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (565381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (566381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (567381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (568381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (569381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (570381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (571381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (572381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (573381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (574381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (575381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (576381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (577381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (578381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (579381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (580381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (581381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (582381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (583381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (584381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (585381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (586381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (587381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (588381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (589381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (590381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (591381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (592381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (593381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (594381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=-0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (595381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (596381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (597381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (598381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (599381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (600381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (601381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (602381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (603381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (604381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (605381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (606381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (607381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (608381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (609381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (610381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (611381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (612381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (613381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (614381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (615381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (616381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (617381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (618381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (619381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (620381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (621381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (622381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (623381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (624381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (625381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (626381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (627381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (628381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (629381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (630381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (631381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (632381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (633381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (634381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (635381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (636381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (637381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (638381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (639381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (640381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (641381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (642381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (643381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (644381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (645381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (646381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (647381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (648381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (649381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (650381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (651381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (652381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (653381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (654381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (655381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (656381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (657381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (658381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (659381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (660381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (661381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (662381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (663381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (664381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (665381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (666381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (667381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m
+[0;32mI (668381) telem: wl=0.00 wr=0.00 yaw=0.17 yr=0.00 dL=0.00 dR=0.00 flt=0x01[0m

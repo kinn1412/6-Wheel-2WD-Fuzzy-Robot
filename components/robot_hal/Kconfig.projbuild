@@ -1,0 +1,11 @@
+menu "HAL Configuration"
+
+    config HAL_IMU_USE_BNO08X
+        bool "Enable BNO08x IMU driver (requires esp32_BNO08x component)"
+        default n
+        help
+            When enabled, hal_imu.c compiles with the real BNO085 SPI backend.
+            When disabled, hal_imu returns stub data (yaw=0) so the project
+            builds without the third-party component.
+
+endmenu

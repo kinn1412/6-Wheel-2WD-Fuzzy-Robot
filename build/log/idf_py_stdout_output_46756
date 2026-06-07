@@ -1,0 +1,29 @@
+Command: ninja all
+[1/20] Building C object esp-idf/services/CMakeFiles/__idf_services.dir/src/odometry.c.obj
+[2/20] Building C object esp-idf/services/CMakeFiles/__idf_services.dir/src/safety.c.obj
+[3/20] Linking C static library esp-idf\services\libservices.a
+[4/20] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "D:\Personal\UIT Learning\ROBOTICS\PROBOT\source\probot\build\bootloader\esp-idf\esptool_py" && D:\Users\ThanhKhoi\.espressif\tools\python_env\v5.5\venv\Scripts\python.exe D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[5/20] Building C object esp-idf/robot_hal/CMakeFiles/__idf_robot_hal.dir/src/hal_encoder.c.obj
+[6/20] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_comm.c.obj
+[7/20] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/app_tasks.c.obj
+[8/20] No install step for 'bootloader'
+[9/20] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_telemetry.c.obj
+[10/20] Building C object esp-idf/robot_hal/CMakeFiles/__idf_robot_hal.dir/src/hal_motor.c.obj
+[11/20] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_speed_ctrl.c.obj
+[12/20] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_motor_bringup.c.obj
+[13/20] Building C object esp-idf/robot_app/CMakeFiles/__idf_robot_app.dir/src/task_speed_test.c.obj
+[14/20] Completed 'bootloader'
+[15/20] Linking C static library esp-idf\robot_hal\librobot_hal.a
+[16/20] Linking C static library esp-idf\robot_app\librobot_app.a
+[17/20] Generating esp-idf/esp_system/ld/sections.ld
+[18/20] Linking CXX executable probot.elf
+[19/20] Generating binary image from built executable
+esptool.py v4.12.dev2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/probot.bin
+[20/20] C:\WINDOWS\system32\cmd.exe /C "cd /D "D:\Personal\UIT Learning\ROBOTICS\PROBOT\source\probot\build\esp-idf\esptool_py" && D:\Users\ThanhKhoi\.espressif\tools\python_env\v5.5\venv\Scripts\python.exe D:/Users/ThanhKhoi/.espressif/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/partition_table/partition-table.bin" "D:/Personal/UIT Learning/ROBOTICS/PROBOT/source/probot/build/probot.bin""
+probot.bin binary size 0x3a2d0 bytes. Smallest app partition is 0x100000 bytes. 0xc5d30 bytes (77%) free.
