@@ -23,7 +23,6 @@
 - [Protocol](#protocol)
 - [Design Notes & Spec Reconciliation](#design-notes--spec-reconciliation)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ---
 
@@ -251,11 +250,6 @@ Both sides are **3.3 V logic** — no level shifter required.
 | Dashboard unreachable | Firewall, or wrong IP | `ip addr` on Pi; open port 8000; same WiFi |
 
 ---
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
 ## Acknowledgments
 
 - `scikit-fuzzy` for the Mamdani toolkit.
