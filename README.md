@@ -7,7 +7,6 @@
 ![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%204-c51a4a)
 ![Link](https://img.shields.io/badge/UART-921600%208N1-green)
 ![Loop](https://img.shields.io/badge/control%20loop-100%20Hz-orange)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
 
